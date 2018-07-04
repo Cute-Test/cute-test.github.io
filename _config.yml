@@ -1,0 +1,10 @@
+markdown: kramdown
+highlighter: rouge
+
+title: CUTE
+logo-small: /img/logo-white.png
+logo: /img/logo.png
+
+name: CUTE
+description: C++ Unit Testing Easier
+url: http://cute-test.com
