@@ -49,14 +49,24 @@ a:focus {
 }
 
 a.navbar-brand {
-   font-weight: 700;
-   font-family: "Quicksand", "Lato";
+  font-weight: 700;
+  font-family: "Quicksand", "Lato";
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #42A80C;
 }
 
 .navbar-default .navbar-nav a {
-   font-weight: 300;
-   font-family: "Quicksand", "Lato";
+  font-weight: 300;
+  font-family: "Quicksand", "Lato";
 }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 /*
 .btn-default {
   border: none;
@@ -68,13 +78,13 @@ a.navbar-brand {
 }
 
 .btn-success {
-	background-color: #6B1C0A;
-	border-color: #6B1C0A;
+  background-color: #6B1C0A;
+  border-color: #6B1C0A;
 }
 
 .btn-success:hover {
-	background-color: #B73420;
-	border-color: #B73420;
+  background-color: #B73420;
+  border-color: #B73420;
 }
 
 .btn-default:hover,
