@@ -64,13 +64,13 @@ a.navbar-brand {
 }
 */
 .navbar-default .navbar-nav > .active > a {
-  background-color: #AE0000;
+  background-color: #6B1C0A;
 }
 
 /*.btn-default:hover,*/
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  background-color: #BE0000;
+  background-color: #6B1C0A;
 }
 
 h1,
