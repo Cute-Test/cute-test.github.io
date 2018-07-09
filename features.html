@@ -14,23 +14,60 @@ permalink: /features/
 <div class="container">
 
   <div class="row featurette">
-    <div class="col-md-7">
-      <h1>Test-Driven Development</h1>
-      <p>Cevelop ships with CUTE (<a href="http://www.cute-test.com">www.cute-test.com</a>), an easy to use unit testing framework for <span style="color:red;">C++</span>. CUTE is tightly integrated with Cevelop to offer easy writing and management of unit tests. The following features are included:</p>
+    <div class="col-md-8">
+      <h1>Tests with Relational Inequality Operators</h1>
+      <p>CUTE provides macros for comparing for inequality that will populate the nice diff view in the plug-in with the values compared. Look for example at the following test:</p>
+      {% highlight c++ %}
+      void test_cute_assert_greater_equal_success(){
+        int const x=4;
+        int const y=4;
+        ASSERT_GREATER_EQUAL(x,y);
+      }{% endhighlight %}
+      <p>Other examples are:</p>
       <ul>
-        <li>Red/Green-bar test result visualization</li>
-        <li>Support for <span style="color:red;">C++</span> seams and mock objects</li>
-        <li>Code coverage visualization</li>
-        <li>Diff-viewer for failing tests</li>
-        <li>Automatic test registration</li>
+        <li>ASSERT_EQUAL, ASSERT_EQUAL_DELTA, ASSERT_EQUAL_RANGES</li>
+        <li>ASSERT_GREATER, ASSERT_GREATER_EQUAL</li>
+        <li>ASSERT_LESS, ASSERT_LESS_EQUAL</li>
+        <li>ASSERT_THROWS, FAIL</li>
+        <li>ASSERT_NOT_EQUAL_TO</li>
       </ul>
     </div>
-
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive" src="../img/cute-feature.png" alt="Generic placeholder image" style="margin-top: 50px;">
-      <p class="img-caption">Red/Green-bar test-driven development with Cevelop.</p>
+    <div class="col-md-4">
+      <img class="featurette-image img-responsive" src="../img/cute-diff-view.png" alt="CUTE Eclipse Plug-in Diff View" style="margin-top: 50px;">
+      <p class="img-caption">The CUTE Eclipse Plug-in results and diff view.</p>
     </div>
+  </div>
 
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-4">
+      <h1>Data-Driven Tests</h1>
+      <p>Write table-driven tests that tell you the location of the table input in addition to the tests function name. Clicking on a failed test will put you into the table entry that caused the failure. If everything works fine, you end up on the table-interpreting function.</p>
+      <ul>
+        <li>DDT, DDTM</li>
+        <li>ASSERT_EQUAL_DDT</li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      {% highlight c++ %}
+      struct test_eq_data {
+        double input,expected;
+        cute::test_failure failure;
+      } eq_table [] = {
+        { 4,16,DDT() },
+        { 2.5,6.25,DDTM("compare well?")}
+      };
+      
+      double square(double x){return x*x;}
+
+      void test_cute_data_driven_equality_demo(){
+        test_eq_data const*const end=eq_table+sizeof(eq_table)/sizeof(*eq_table);
+        for(test_eq_data *it=eq_table; it != end; ++it){
+          ASSERT_EQUAL_DDT(it->expected,square(it->input),it->failure);
+        }
+      }{% endhighlight %}
+    </div>
   </div>
 
 </div>
