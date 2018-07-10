@@ -138,6 +138,7 @@ h6,
 }
 
 .jumbotron {
+ padding-top: 75px;
  background-color: #eee;
  padding-bottom: 0;
 }
