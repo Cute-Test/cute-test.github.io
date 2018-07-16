@@ -4,7 +4,7 @@ active: news
 title:  "Hello World!"
 ---
 
-We are very excited to introduce the new **CUTE** website with a brand new look and feel.
+We are very excited to introduce the new CUTE website with a brand new look and feel.
 
 At the <a href="https://ifs.hsr.ch" target="_blank">Institute for Software</a> we have developed numerous plug-ins for Eclipse, for example the popular CUTE unit testing framework. This new and improved website provides all the information you as a developer might need.
 
