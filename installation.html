@@ -17,11 +17,6 @@ permalink: /installation/
         <h4> You can use the CUTE unit testing framework with the Eclipse IDE or as a standalone solution.</h4>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <p>Please note that CUTE has certain dependencies and also supports older versions of Eclipse. See the <a href="/faq">Frequently Asked Questions</a> for more detailed information.</p>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -33,18 +28,31 @@ permalink: /installation/
   </div>
   <div class="row">
     <div class="col-md-12">
-      <p>The CUTE plug-in can either be installed from the Eclipse Marketplace or by using our updatesite directly.</p>
+      <p>The CUTE Eclipse Plug-in can be installed from the Eclipse Marketplace.</p>
     </div>
   </div>
   <div class="row">
     <div class="col-md-12">
-      <h3>Using the Eclipse Marketplace</h3>
-      <p>This is the easiest way to get CUTE. Choose <kbd>Help > Eclipse Marketplace</kbd> in the Eclipse menu and search for CUTE. This will install the CUTE plug-in and required CUTE header files.</p>
-      <img class="featurette-image img-responsive" src="../img/eclipse-marketplace.png" alt="Updatesite Plugin Feature" style="margin-top: 30px; margin-bottom: 35px; margin-left: 55px;">
-      <p><i>Note:</i> If you require to install optional CUTE features, please install them from the CUTE <a href="http://www.cute-test.com/updatesite">updatesite</a>.</p>
+      <h3>What is needed to run the CUTE Eclipse Plug-in?</h3>
+      <p>The CUTE Eclipse plug-in depends on the following software:
+        <ul>
+          <li><a href="https://wiki.eclipse.org/Eclipse/Installation#Install_a_JVM" target="_blank">Java JRE</a></li>
+          <li><a href="https://www.eclipse.org/" target="_blank">Eclipse IDE</a> with installed <a href="https://www.eclipse.org/cdt/" target="_blank">Eclipse C/C++ Development Tooling</a>. Either download CDT combined with Eclipse ("Eclipse IDE for C/C++ Developers" from the <a href="https://www.eclipse.org/downloads/" target="_blank">Eclipse Download Page</a>) or install into any Eclipse from the CDT updatesite (https://download.eclipse.org/releases/&lt;Eclipse_Releasename&gt;/).</a></li>
+          <li>Boost C++ Libraries (pre C++11): Install <a href="https://www.boost.org/" target="_blank">Boost C++ Libaries</a> on your system or use the Boost Headers provided with the CUTE plug-in. Since C++11, Boost is no longer needed.</li>
+          <li>For CDT to be able to compile, you will also need to have an <a href="https://wiki.eclipse.org/CDT/User/FAQ#Does_CDT_include_a_compiler.3F" target="_blank">Eclipse compatible C++ compiler</a> installed.</li>
+        </ul>
+      </p>
     </div>
   </div>
   <div class="row">
+    <div class="col-md-12">
+      <h3>Install the CUTE Eclipse Plug-in from the  Eclipse Marketplace</h3>
+      <p>This is the easiest way to get CUTE. Choose <kbd>Help > Eclipse Marketplace</kbd> in the Eclipse menu and search for CUTE. This will install the CUTE plug-in and required CUTE header files.</p>
+      <img class="featurette-image img-responsive" src="../img/eclipse-marketplace.png" alt="Updatesite Plugin Feature" style="margin-top: 30px; margin-bottom: 35px; margin-left: 55px;">
+      <p><i>Note:</i> If you require to install optional CUTE features, please install them from the CUTE <a href="http://www.cute-test.com/updatesite" target="_blank">updatesite</a>.</p>
+    </div>
+  </div>
+  <!--div class="row">
     <div class="col-md-12">
       <h3>Using the CUTE Updatesite</h3>
       <p>In Eclipse, do the following:
@@ -59,7 +67,7 @@ permalink: /installation/
       </ol>
       <p><i>Note:</i> If you are interested in the latest features, which might be experimental and in some cases not stable, you can get the latest successful build at the following updatesite: <a href="http://www.cute-test.com/updatesite/development">updatesite</a>.</p>
     </div>
-  </div>
+  </div-->
 </div>
 
 <div class="container">
@@ -75,7 +83,7 @@ permalink: /installation/
   </div>
   <div class="row">
     <div class="col-md-12">
-      <p>Download the CUTE Standalone source files from the <a href="https://github.com/PeterSommerlad/CUTE">CUTE GitHub repository</a> and add them to your source tree. CUTE works with modern GNU and Microsoft C++ toolchains, plus the Boost C++ Libraries.</p>
+      <p>Download the CUTE Standalone source files from the <a href="https://github.com/PeterSommerlad/CUTE" target="_blank">CUTE GitHub repository</a> and add them to your source tree. CUTE works with modern GNU and Microsoft C++ toolchains, plus the Boost C++ Libraries.</p>
     </div>
   </div>
 </div>
