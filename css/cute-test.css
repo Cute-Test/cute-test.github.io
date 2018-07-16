@@ -62,17 +62,13 @@ a:focus {
   text-decoration: none;
 }
 
-.navbar-default {
- background-color: #50843B;
-}
-
 a.navbar-brand {
   font-weight: 700;
   font-family: "Quicksand", "Lato";
 }
 
 .navbar-default .navbar-brand:hover {
-  color: #D40000;
+  color: #44AA00;
 }
 
 .navbar-default .navbar-nav a {
@@ -81,7 +77,7 @@ a.navbar-brand {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #B73420;
+  color: #44AA00;
   text-decoration: none;
 }
 
@@ -92,7 +88,7 @@ a.navbar-brand {
 }
 */
 .navbar-default .navbar-nav > .active > a {
-  background-color: #6B1C0A;
+  background-color: #44AA00;
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
@@ -100,8 +96,8 @@ a.navbar-brand {
 }
 
 .btn-success {
-  background-color: #6B1C0A;
-  border-color: #6B1C0A;
+  background-color: #44AA00;
+  border-color: #44AA00;
 }
 
 .btn-success:hover {
@@ -112,8 +108,8 @@ a.navbar-brand {
 .btn-default:hover,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  border-color: #B73420;
-  background-color: #B73420;
+  border-color: #44AA00;
+  background-color: #44AA00;
 }
 
 h1,
@@ -159,7 +155,7 @@ h6,
   color: white;
   margin-bottom: 0;
   margin-top: 0px;
-  background-color: #50843B;
+  background-color: #2D3E50;
   height: 150px;
   width: 100%;
   bottom: 0px;
