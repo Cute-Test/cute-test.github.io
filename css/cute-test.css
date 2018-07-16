@@ -17,7 +17,7 @@ body {
 }
 
 .row ul li {
-    background-image: url('/img/star-16x16.png');
+    background-image: url('/img/bullet.png');
     background-repeat: no-repeat;
     background-position: 0px 6px;
     padding-left: 24px;
