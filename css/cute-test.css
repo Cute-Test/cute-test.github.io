@@ -101,15 +101,14 @@ a.navbar-brand {
 }
 
 .btn-success:hover {
-  background-color: #B73420;
-  border-color: #B73420;
+  background-color: #398F00;
+  border-color: #398F00;
 }
 
-.btn-default:hover,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  border-color: #44AA00;
-  background-color: #44AA00;
+  border-color: #398F00;
+  background-color: #398F00;
 }
 
 h1,
