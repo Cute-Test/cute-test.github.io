@@ -147,9 +147,12 @@ h6,
 }
 
 .jumbotron {
- padding-top: 75px;
  background-color: #eee;
  padding-bottom: 0;
+}
+
+.jumbotron.padded {
+ padding-top: 75px;
 }
 
 #footer {
