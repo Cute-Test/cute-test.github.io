@@ -1,4 +1,5 @@
 markdown: kramdown
+permalink: pretty
 highlighter: rouge
 
 title: CUTE
@@ -8,3 +9,7 @@ logo: /img/logo-wide-dark.png
 name: CUTE
 description: C++ Unit Testing Easier
 url: http://cute-test.com
+
+collections:
+  guides:
+    output: true

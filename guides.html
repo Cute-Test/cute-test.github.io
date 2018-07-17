@@ -1,0 +1,49 @@
+---
+layout: default
+title: CUTE Guide
+active: guides
+permalink: /guides/
+---
+  
+<div class="jumbotron">
+  <div class="container">
+    <h1>News <small>&ndash; need help? here you find your answers</small></h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="tutorial-nav">
+        <h2 class="post-title" itemprop="name headline">Overview</h2>
+        <ul>
+          {% for item in site.data.navigation.guides %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <hr class="featurette-divider">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      {% assign guides = site.guides %}
+      {% for post in guides %}
+	<div class="post">
+	  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+	  <p>{{ post.content }}</p>
+	</div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

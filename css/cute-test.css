@@ -150,6 +150,10 @@ h6,
  padding-top: 75px;
 }
 
+.tutorial-nav {
+  margin-bottom: 30px;
+}
+
 #footer {
   color: white;
   margin-bottom: 0;

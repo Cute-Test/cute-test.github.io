@@ -81,6 +81,14 @@
 		<a href="/features">Features</a>
 	      </li>
 
+        {% if page.active == "guide" %}
+        <li class="active">
+            {% else %}
+        <li>
+            {% endif %}
+    <a href="/guides">Guides</a>
+        </li>
+
 	    {% if page.active == "faq" %}
 	      <li class="active">
             {% else %}
