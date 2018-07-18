@@ -25,12 +25,7 @@ C++ offers a wide variety of language mechanisms to create seams. Beside the cla
 ## Screencast Introduction to Seams
 <a name="screencastintroductiontoseams"></a>
 
-<object width="425" height="344">
-  <param name="movie" value="https://www.youtube.com/v/p4oM2bEZvAU&hl=en&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="https://www.youtube.com/v/p4oM2bEZvAU&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p4oM2bEZvAU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Object Seam
 <a name="objectseam"></a>
@@ -88,12 +83,7 @@ This way we can now inject a different kind of `Die` depending on the context we
 
 ### Object Seams Screencast
 
-<object width="425" height="344">
-  <param name="movie" value="https://www.youtube.com/v/ozhRP0kobuk&hl=en&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="https://www.youtube.com/v/ozhRP0kobuk&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ozhRP0kobuk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Compile Seam
 <a name="compileseam"></a>
@@ -123,12 +113,7 @@ The use of static polymorphism with template parameters has several advantages o
 
 ### Compile Seams Screencast
 
-<object width="425" height="344">
-  <param name="movie" value="https://www.youtube.com/v/c4El5wN2SBI&hl=en&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="https://www.youtube.com/v/c4El5wN2SBI&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c4El5wN2SBI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Preprocessor Seam
 <a name="preprocessorseam"></a>
@@ -155,12 +140,7 @@ The enabling point for this seam are the options of our compiler to choose betwe
 
 ### Preprocessor Seams Screencast
 
-<object width="425" height="344">
-  <param name="movie" value="https://www.youtube.com/v/uv-AC_-QwKs&hl=en&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="https://www.youtube.com/v/uv-AC_-QwKs&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uv-AC_-QwKs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Link Seams
 <a name="linkseam"></a>
@@ -173,12 +153,7 @@ Beside the separate preprocessing step that occurs before compilation, we also h
 
 ### Link Seams Screencast
 
-<object width="425" height="344">
-  <param name="movie" value="https://www.youtube.com/v/jlP5lLOOixA&hl=en&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="https://www.youtube.com/v/jlP5lLOOixA&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jlP5lLOOixA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Shadow Functions Through Linking Order
 
@@ -269,69 +244,34 @@ Features include:
 ## Creating Mock Objects
 <a name="creatingmockobjects"></a>
 
-<object width="425" height="344">
-  <param name="movie" value="https://www.youtube.com/v/m_5ZMMmsY3M&hl=en&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="https://www.youtube.com/v/m_5ZMMmsY3M&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m_5ZMMmsY3M?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Move Test Double to Namespace
 <a name="movetestdoubletonamespace"></a>
 
-<object width="425" height="344">
-  <param name="movie" value="https://www.youtube.com/v/z3wKo6aE7LI=en&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="https://www.youtube.com/v/z3wKo6aE7LI&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z3wKo6aE7LI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Converting Fake to Mock Objects
 <a name="convertingfaketomockobjects"></a>
 
-<object width="425" height="344">
-  <param name="movie" value="https://www.youtube.com/v/FsXikqCiPLE=en&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="https://www.youtube.com/v/FsXikqCiPLE&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FsXikqCiPLE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Toggle Mock Support
 <a name="togglemocksupport"></a>
 
-<object width="425" height="344">
-  <param name="movie" value="https://www.youtube.com/v/CRX5_wdny_M=en&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="https://www.youtube.com/v/CRX5_wdny_M&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CRX5_wdny_M?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Registration Consistency
 <a name="registrationconsistency"></a>
 
-<object width="425" height="344">
-  <param name="movie" value="https://www.youtube.com/v/vVxTAFhPRFk=en&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="https://www.youtube.com/v/vVxTAFhPRFk&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vVxTAFhPRFk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Mock Functions
 <a name="mockfunctions"></a>
 
-<object width="425" height="344">
-  <param name="movie" value="https://www.youtube.com/v/iIlZSJ947GA=en&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="https://www.youtube.com/v/iIlZSJ947GA&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iIlZSJ947GA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Using Regular Expressions For Expectations
 <a name="usingregularexpressionsforexpectations"></a>
 
-<object width="425" height="344">
-  <param name="movie" value="https://www.youtube.com/v/z0hdYPA7gSg=en&fs=1"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="https://www.youtube.com/v/z0hdYPA7gSg&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z0hdYPA7gSg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
