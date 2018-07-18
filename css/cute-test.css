@@ -150,6 +150,12 @@ h6,
  padding-top: 75px;
 }
 
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 20px;
+}
+
 #footer {
   color: white;
   margin-bottom: 0;

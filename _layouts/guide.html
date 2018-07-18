@@ -12,7 +12,7 @@ sidebar: guides
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-3">
+    <div class="col-lg-3 sticky">
       <div class="tutorial-nav">
         <h2 class="post-title" itemprop="name headline"><a class="post-link" href="/guides/">Overview</a></h2>
         <ul>
@@ -62,19 +62,3 @@ sidebar: guides
     </div>
   </div>
 </div>
-
-<!--script>
-  $(function() {
-    var $navbar    = $(".tutorial-nav"),
-        $window    = $(window),
-        offset     = $navbar.offset(),
-        topPadding = 50;
-    $window.scroll(function() {
-      if ($window.scrollTop() > offset.top) {
-        $navbar.css("margin-top", $window.scrollTop() - offset.top + topPadding);
-      } else {
-        $navbar.css("margin-top", 0);
-      }
-    });
-  });
-</script-->
