@@ -17,36 +17,37 @@ sidebar: guides
         <h2 class="post-title" itemprop="name headline"><a class="post-link" href="/guides/">Overview</a></h2>
         <ul>
           {% for item in site.data.navigation.guides %}
-          {% if item.subcategories != null %}
-          <li>
-            <a href="{{ item.url }}"><big>{{ item.title }}</big></a>
-            <ul>
-              {% for subcategory in item.subcategories %}
-              {% if subcategory.subsubcategories != null %}
-              <li>
-                <a href="{{ subcategory.url }}">{{ subcategory.subtitle }}</a>
-                <ul>
-                  {% for subsubcategory in subcategory.subsubcategories %}
-                  <li>
-                    <a href="{{ subsubcategory.url }}"><small>{{ subsubcategory.subsubtitle }}</small></a>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              {% else %} 
-              <li>
-                <a href="{{ subcategory.url }}">{{ subcategory.subtitle }}</a>
-              </li>
-              {% endif %}
-              {% endfor %}
-            </ul>
-          </li>
-          {% else %}
-          <li>
-            <a href="{{ item.url }}"><big>{{ item.title }}</big></a>
-          </li>
+          {% if item.title == page.title %}
+            {% if item.subcategories != null %}
+            <li>
+              <a href="{{ item.url }}"><big>{{ item.title }}</big></a>
+              <ul>
+                {% for subcategory in item.subcategories %}
+                {% if subcategory.subsubcategories != null %}
+                <li>
+                  <a href="{{ subcategory.url }}">{{ subcategory.subtitle }}</a>
+                  <ul>
+                    {% for subsubcategory in subcategory.subsubcategories %}
+                    <li>
+                      <a href="{{ subsubcategory.url }}"><small>{{ subsubcategory.subsubtitle }}</small></a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+                {% else %} 
+                <li>
+                  <a href="{{ subcategory.url }}">{{ subcategory.subtitle }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+            </li>
+            {% else %}
+            <li>
+              <a href="{{ item.url }}"><big>{{ item.title }}</big></a>
+            </li>
+            {% endif %}
           {% endif %}
-          <br>
           {% endfor %}
         </ul>
       </div>
