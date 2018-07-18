@@ -18,6 +18,7 @@ The CUTE Eclipse plug-in integrates the CUTE C++ unit testing framework into the
 This page shows how to use the CUTE Eclipse plug-in once it is [installed](/installation).
 
 ## Functionality
+<a name="functionality"></a>
 
 ### Create a Project
 
@@ -151,10 +152,12 @@ ASSERT_NOT_EQUAL_TOM(msg, left, right){% endhighlight %}
 See [Writing and Running CUTE Unit Test Suites](#writingandrunningunittestsuites) for details.
 
 ## Rerun Individual Tests, Suites or Groups of Tests
+<a name="rerunindividualtestssuitesorgroupsoftests"></a>
 
 From within the CUTE Tests view you can select tests or suites from the tree and let these run individually. If the view was populated from a "Debug as CUTE Test" the re-run will be within the debugger as well.
 
 ## XML Output
+<a name="xmloutput"></a>
 
 The CUTE framework can generate XML output. While this doesn't directly link with the CUTE framework, you can click on the generated XML file in the project's root folder from within CDT and might get Eclipse's JUnit View if you have installed JDT as well. The XML output might be interesting for you when using hudson or jenkins.
 
@@ -166,14 +169,12 @@ Right click on the newly created CUTE project and select _Properties_. Under _C/
 ![Include Boost](/img/guides/20161110_include_boost.png "Include Boost")
 
 # TDD Support
+<a name="tddsupport"></a>
 
-The CUTE plug-in supports the user in creating and running unit tests for C++. Additionally, it provides decent support for Test Driven Development.
-
-## Introduction
-
-When following Test Driven Development, the unit tests are written before the implementation. While writing the test cases, much semantic and syntactic information about the tested entities is specified. The CUTE plug-in coding assist supports the developer by generating the stubs as a framework for implementing the functionality.
+The CUTE plug-in supports the user in creating and running unit tests for C++. Additionally, it provides decent support for Test Driven Development. When following Test Driven Development, the unit tests are written before the implementation. While writing the test cases, much semantic and syntactic information about the tested entities is specified. The CUTE plug-in coding assist supports the developer by generating the stubs as a framework for implementing the functionality.
 
 ## Features
+<a name="features"></a>
 
 * Creating Class Types
 * Creating Constructors
@@ -185,6 +186,7 @@ When following Test Driven Development, the unit tests are written before the im
 * Creating Namespaces
 
 ## TDD Tutorial
+<a name="tddtutorial"></a>
 
 Let us have a look at the TDD feature. We will introduce its functionality with a step-by-step example. Our objective is to develop a simple calculator.
 
@@ -363,6 +365,7 @@ Now compiling and running our unit tests results in a green bar for both tests.
 The steps described are examples of the capabilities of our plug-in's TDD features. It can also recognize for example missing operators, local variables and free functions.
 
 ## Limitations
+<a name="limitations"></a>
 
 As it is very complex to provide sensible code stubs for C++ just from the context where an entity is used, it takes quite some effort to achieve flawless code generation. Therefore, feedback is greatly appreciated.
 
@@ -374,6 +377,7 @@ Information about symbols, which is required for reporting errors and providing 
 Here you will learn how to create and run tests for your code using the CUTE C++ unit testing framework. We begin with the initial trivial test `src/Test.cpp` that is created by the [Using the CUTE Eclipse Plug-in](#usingtheeclipseplugin).
 
 ## Source File Organization
+<a name="sourcefileorganization"></a>
 
 Before you start writing tests, you need a plan for organizing your source files.
 
@@ -423,6 +427,7 @@ Edit this file:
 Chances are, you will want to partition your tests into multiple files. Generally, it is best to have one test suite for each source file in the project that you are unit testing. The test suite consists of a header (.h) file and an implementation (.cpp) file. Name them consistently. For example, put class `myclass` in files `myclass.cpp` and `myclass.h`, and put the unit test for `myclass` in `myclassTest.cpp` and `myclassTest.h`.
 
 ## Writing Tests
+<a name="writingtests"></a>
 
 ### Code Your Tests Using CUTE Assertions
 
@@ -487,6 +492,7 @@ void test_that_something_throws() {
 Put these assertions in the test implementation file (`myclassTest.cpp` in the above example).
 
 ## Collect the Tests In a Test Suite
+<a name="collectthetestsinatestsuite"></a>
 
 A CUTE test suite is a vector of tests. The tests are executed in the order in which they were appended to the suite. If an assertion in some test fails, the failure is reported, and the rest of the test is skipped. Execution continues with the next test in the suite. This means that a suite of many short tests is better than a few long tests:
 
@@ -562,6 +568,7 @@ int main(int argc, char const *argv[]) {
 }{% endhighlight %}
 
 ## Running the CUTE Test
+<a name="runningthecutetest"></a>
 
 Compile and execute the test. The tests will be executed in the order in which they were appended to the suite. If an assertion fails, it is reported through the listener, and the test containing the failed assertion is aborted. Execution continues with the next test in the suite.
 
@@ -582,6 +589,7 @@ At this point, you can give the new test function a unique name. Note that the t
 ![Inserted New Test Function](/img/guides/20161216_inserted_new_test_function.png "Inserted New Test Function")
 
 ## Adding Test Functions to a Suite
+<a name="addingtestfunctionstoasuite"></a>
 
 If you write a new test function by hand, you can automatically add it to the test suite as described in the following.
 
@@ -634,6 +642,7 @@ int main(int argc, char const *argv[]) {
 }{% endhighlight %}
 
 ## Adding Test Member to Suite
+<a name="addingtestmembertosuite"></a>
 
 A test method in a class or struct can be added. See the code bellow as example.
 
@@ -698,6 +707,7 @@ Press _Next >_ or _Finish_ to complete the wizard.
 Under _Project > Properties > C/C++ Build > Settings_, one of the following compiler -I and Linker -l -L settings will be set. Subsequent changes can be managed by the user.
 
 # Creating a Suite Project
+<a name="creatingasuiteproject"></a>
 
 A CUTE project with a custom test suite name can be created easily with the CUTE Suite Project wizard. To do this, select _File > New > C++ Project_. Then, expand _CUTE_, select _CUTE Suite Project_ and give your project a name.
 
@@ -714,6 +724,7 @@ A project with the structure shown below will be created.
 Add tests that belong to the newly created suite in `<your_suite_name>.cpp`.
 
 # Adding New Suite Modules
+<a name="addingnewsuitemodules"></a>
 
 Right-click on a project, folder or file (`.cpp` or `.h`) and choose _New > CUTE Suite File_.
 

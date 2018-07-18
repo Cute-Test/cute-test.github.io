@@ -75,6 +75,7 @@ If you really want to organize your test as a sequence of test suites, CUTE prov
 CUTE's Eclipse plug-in eases the construction of test suites by providing automatic code generation and adjustment for registering test functions in suites. You can have standalone CUTE executables for a single suite, or test multiple suites, each in a separate library project.
 
 ## Assertions and Failures
+<a name="assertionandfailures"></a>
 
 A unit testing framework would not be complete without a way to actually check something in a convenient way. One principle of testing is to fail fast, so any failed test assertion will abort the current test and signal the failure to the top-level runner. You might have already guessed that this is done by throwing an exception. Later on, we will want to know where that test failed, so I introduced an exception class `test_failure` that takes the source file name and line number in the source file. Java does this automatically for exceptions, but as C++ programmers we must obtain and store this information ourselves. We rely on the preprocessor to actually know where we are in the code. Another `std::string` allows sending additional information from the test programmer to the debugger of a failing test.
 
@@ -106,6 +107,7 @@ For actually writing test assertions, I provided macros that will throw if a tes
 This is all you need to get started. However, some convenience is popular in testing frameworks. Unfortunately, convenience often tends to be over-engineered and I am not yet sure if the convenience functionality I provided is yet simple enough. Therefore I ask for your feedback on how to make things simpler or confirmation that it is already simple enough.
 
 ## Testing for Equality
+<a name="testingforequality"></a>
 
 Testing two values for equality is probably the most popular test. Therefore, all testing frameworks provide a means to test for equality. JUnit, for example, provides a complete set of overloaded equality tests. C++ templates can do that as well with less code. For more complex data types, such as strings, it can be difficult to see the difference between two values, when they are simply printed in the error message.
 
@@ -175,6 +177,7 @@ void assert_equal(ExpectedValue const &expected
 As of version 1.5, CUTE allows all kinds of types to be compared by `ASSERT_EQUAL`. While earlier versions allowed only types where `operator<<(ostream &,TYPE)` was defined, some template meta-programming tricks now allow also other types, as long as `operator==(expected,actual)` is defined and delivers a bool compatible result. For integer types, meta-programming ensures that no signed-unsigned comparison warning is issued anymore. Comparing two floating point values without specifying a delta, automatically selects a delta that masks the least significant decimal digit, based on the size of expected. Floating point comparison subtracts actual and expected and sees if the absolute value of the difference is less than delta, by using `std::abs()`.
 
 ## Exception Testing
+<a name="exceptiontesting"></a>
 
 Another good unit testing practice is to verify that things go wrong as intended.
 
@@ -197,6 +200,7 @@ There is no need to implement the try-catch again by hand to test error conditio
 You might need parenthesis around the code in the macro parameter to disambiguate commas, particularly commas in a parameter list.
 
 ## Listening Customization
+<a name="listeningcustomization"></a>
 
 You have already seen that the runner class template can be specialized by providing a listener. The `runner` class is an inverted application of the Template Method design pattern [GoF]. Instead of implementing the methods called dynamically in a subclass, you provide a template parameter that acts as a base class to the class @runner@, which holds the template methods `runit()` and `operator()`.
 
@@ -325,6 +329,7 @@ struct counting_listener:Listener{
 From the above schema, you can derive your own stackable listener classes, such as a listener that displays in a GUI the progress and results of tests as they run. If you do so, please share your solution.
 
 ## Member Functions as Tests
+<a name="memberfunctionsastests"></a>
 
 With `std::bind()` at your disposal, it is easy to construct a functor object from a class and its member function. Again this is canned in a macro that can be used like this:
 
@@ -350,6 +355,7 @@ test makeMemberFunctionTest(TestClass &t,void (TestClass::*fun)(),char const *na
 When the template function `makeMemberFunctionTest` is called, it employs `std::bind` to create a functor object that will call the member function fun on object `t`. Again we can employ C++ reflection using `typeid` to derive part of the test object's name. We need to derive the member function name again using the preprocessor with a macro. In order to also allow const member functions, the template function comes in two overloads, one using a reference (as shown) and the other using a const reference for the testing object.
 
 ## Test Object Incarnation
+<a name="testobjectincarnation"></a>
 
 I will spare you the details, and just present the mechanism of object incarnation and then calling a member function for the case where you can supply a context object:
 

@@ -9,7 +9,59 @@ guides:
             url: /guides/cute-framework-guide/#cutetest
           - subsubtitle: "Sweet Suites"
             url: /guides/cute-framework-guide/#sweetsuites
+          - subsubtitle: "Assertions and Failures"
+            url: /guides/cute-framework-guide/#assertionandfailures
+          - subsubtitle: "Testing for Equality"
+            url: /guides/cute-framework-guide/#testingforequality
+          - subsubtitle: "Exception Testing"
+            url: /guides/cute-framework-guide/#exceptiontesting
+          - subsubtitle: "Listening Customization"
+            url: /guides/cute-framework-guide/#listeningcustomization
+          - subsubtitle: "Member Functions as Tests"
+            url: /guides/cute-framework-guide/#memberfunctionsastests
+          - subsubtitle: "Test Object Incarnation"
+            url: /guides/cute-framework-guide/#testobjectincarnation
   - title: "CUTE Eclipse Plug-in Guide"
     url: /guides/cute-eclipse-plugin-guide/
+    subcategories:
+      - subtitle: "Using the CUTE Eclipse Plug-in"
+        url: /guides/cute-eclipse-plugin-guide/#usingtheeclipseplugin
+        subsubcategories:
+            - subsubtitle: "Functionality"
+              url: /guides/cute-eclipse-plugin-guide/#functionality
+            - subsubtitle: "Rerun Individual Tests, Suites or Groups of Tests"
+              url: /guides/cute-eclipse-plugin-guide/#rerunindividualtestssuitesorgroupsoftests
+            - subsubtitle: "XML Output"
+              url: /guides/cute-eclipse-plugin-guide/#xmloutput
+      - subtitle: "Specify Boost's Headers Installation Location"
+        url: /guides/cute-eclipse-plugin-guide/#specifyboost
+      - subtitle: "TDD Support"
+        url: /guides/cute-eclipse-plugin-guide/#tddsupport
+        subsubcategories:
+          - subsubtitle: "Features"
+            url: /guides/cute-eclipse-plugin-guide/#features
+          - subsubtitle: "TDD Tutorial"
+            url: /guides/cute-eclipse-plugin-guide/#tddtutorial
+          - subsubtitle: "Limitations"
+            url: /guides/cute-eclipse-plugin-guide/#limitations
+      - subtitle: "Writing and Running CUTE Unit Test Suites"
+        url: /guides/cute-eclipse-plugin-guide/#writingandrunningunittestsuites
+        subsubcategories:
+          - subsubtitle: "Source File Organization"
+            url: /guides/cute-eclipse-plugin-guide/#sourcefileorganization
+          - subsubtitle: "Writing Tests"
+            url: /guides/cute-eclipse-plugin-guide/#writingtests
+          - subsubtitle: "Collect the Tests In a Test Suite"
+            url: /guides/cute-eclipse-plugin-guide/#collectthetestsinatestsuite
+          - subsubtitle: "Running the CUTE Test"
+            url: /guides/cute-eclipse-plugin-guide/#runningthecutetest
+          - subsubtitle: "Adding Test Functions to a Suite"
+            url: /guides/cute-eclipse-plugin-guide/#addingtestfunctionstoasuite
+          - subsubtitle: "Adding Test Member to Suite"
+            url: /guides/cute-eclipse-plugin-guide/#addingtestmembertosuite
+      - subtitle: "Creating a Suite Project"
+        url: /guides/cute-eclipse-plugin-guide/#creatingasuiteproject
+      - subtitle: "Adding New Suite Modules"
+        url: /guides/cute-eclipse-plugin-guide/#addingnewsuitemodules
   - title: "Mocking with CUTE"
     url: /guides/mocking-with-cute/
