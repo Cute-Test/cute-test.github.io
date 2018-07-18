@@ -3,3 +3,5 @@ guides:
     url: /guides/cute-framework-guide/
   - title: "CUTE Eclipse Plug-in Guide"
     url: /guides/cute-eclipse-plugin-guide/
+  - title: "Mocking with CUTE"
+    url: /guides/mocking-with-cute/
