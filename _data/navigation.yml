@@ -65,3 +65,38 @@ guides:
         url: /guides/cute-eclipse-plugin-guide/#addingnewsuitemodules
   - title: "Mocking with CUTE"
     url: /guides/mocking-with-cute/
+    subcategories:
+      - subtitle: "Refactoring Towards Seams"
+        url: /guides/mocking-with-cute/#refactoringtowardsseams
+        subsubcategories:
+          - subsubtitle: "What is a Seam?"
+            url: /guides/mocking-with-cute/#whatisaseam
+          - subsubtitle: "What Kinds of Seams Does C++ Provide?"
+            url: /guides/mocking-with-cute/#whatkindsofseamsdoescppprovide
+          - subsubtitle: "Screencast Introduction to Seams"
+            url: /guides/mocking-with-cute/#screencastintroductiontoseams
+          - subsubtitle: "Object Seam"
+            url: /guides/mocking-with-cute/#objectseam
+          - subsubtitle: "Compile Seam"
+            url: /guides/mocking-with-cute/#compileseam
+          - subsubtitle: "Preprocessor Seam"
+            url: /guides/mocking-with-cute/#preprocessorseam
+          - subsubtitle: "Link Seam"
+            url: /guides/mocking-with-cute/#linkseam
+      - subtitle: "Using Test Doubles"
+        url: /guides/mocking-with-cute/#usingtestdoubles
+        subsubcategories:
+          - subsubtitle: "Creating Mock Objects"
+            url: /guides/mocking-with-cute/#creatingmockobjects
+          - subsubtitle: "Move Test Double to Namespace"
+            url: /guides/mocking-with-cute/#movetestdoubletonamespace
+          - subsubtitle: "Converting Fake to Mock Objects"
+            url: /guides/mocking-with-cute/#convertingfaketomockobjects
+          - subsubtitle: "Toggle Mock Support"
+            url: /guides/mocking-with-cute/#togglemocksupport
+          - subsubtitle: "Registration Consistency"
+            url: /guides/mocking-with-cute/#registrationconsistency
+          - subsubtitle: "Mock Functions"
+            url: /guides/mocking-with-cute/#mockfunctions
+          - subsubtitle: "Using Regular Expressions For Expectations"
+            url: /guides/mocking-with-cute/#usingregularexpressionsforexpectations
