@@ -47,7 +47,12 @@ sidebar: guides
               <a href="{{ item.url }}"><big>{{ item.title }}</big></a>
             </li>
             {% endif %}
+          {% else %}
+          <li>
+            <a href="{{ item.url }}"><big>{{ item.title }}</big></a>
+          </li>
           {% endif %}
+          <br>
           {% endfor %}
         </ul>
       </div>
@@ -58,7 +63,7 @@ sidebar: guides
   </div>
 </div>
 
-<script>
+<!--script>
   $(function() {
     var $navbar    = $(".tutorial-nav"),
         $window    = $(window),
@@ -72,4 +77,4 @@ sidebar: guides
       }
     });
   });
-</script>
+</script-->
