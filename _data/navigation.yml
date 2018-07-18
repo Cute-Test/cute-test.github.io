@@ -1,6 +1,14 @@
 guides:
   - title: "CUTE Framework Guide"
     url: /guides/cute-framework-guide/
+    subcategories:
+      - subtitle: "How Things Work"
+        url: /guides/cute-framework-guide/#howthingswork
+        subsubcategories:
+          - subsubtitle: "CUTE Test"
+            url: /guides/cute-framework-guide/#cutetest
+          - subsubtitle: "Sweet Suites"
+            url: /guides/cute-framework-guide/#sweetsuites
   - title: "CUTE Eclipse Plug-in Guide"
     url: /guides/cute-eclipse-plugin-guide/
   - title: "Mocking with CUTE"

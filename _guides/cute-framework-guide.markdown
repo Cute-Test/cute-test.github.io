@@ -6,12 +6,14 @@ active: guides
 ---
 
 # How Things Work
+<a name="howthingswork"></a>
 
 I tried to create a simple, orthogonal and thus easy to extend and adapt testing framework that stays easy to use. I avoided some complexity for users of CUTE by exploiting modern C++ library features in the Boost library that is part of the `std::tr1` standard.
 
 Note that all classes presented below are in namespace cute, which is omitted for the sake of brevity.
 
 ## CUTE Test
+<a name="cutetest"></a>
 
 The core class stores test functions using `std::function`. With `std::function`, any parameterless function or functor can be a test. In addition, each `cute::test` has a name for easier identification. That name is given either during construction or derived from a functor's `typeid`. The GNU g++ compiler requires that you demangle the name given by the `type_info` object, while VC++ provides a human readable `type_info::name()` result directly.
 
@@ -45,6 +47,7 @@ For simple functions, or when you want to name your tests differently from the f
 Using a template constructor allows you to use any kind of functor that can be stored in a `std::function<void()>`, but this means that the functor can take no parameters. To construct with functions, functors or member functions with parameters, use `std::bind()` as shown below.
 
 ## Sweet Suites
+<a name="sweetsuites"></a>
 
 Running a single test with `cute::runner` is not very interesting. You might as well just call that function directly and check the results. The power of unit testing is realized when you have a larger collection of test cases that run after every compile and on a build server after every check-in. Thus there is a need for running many tests at once.
 
