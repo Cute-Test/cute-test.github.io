@@ -13,7 +13,7 @@ permalink: /guides/
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-3">
       <div class="tutorial-nav">
         <h2 class="post-title" itemprop="name headline">Overview</h2>
         <ul>
@@ -23,26 +23,13 @@ permalink: /guides/
         </ul>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <hr class="featurette-divider">
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-9">
       {% assign guides = site.guides  | sort: 'tutorial_index' %}
       {% for post in guides %}
-	<div class="post">
-	  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-	  <p>{{ post.content }}</p>
-	</div>
+      <div class="post">
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <p>{{ post.content }}</p>
+      </div>
       {% endfor %}
     </div>
   </div>
