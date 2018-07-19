@@ -29,10 +29,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="-18.47201"
+     inkscape:cx="-193.97201"
      inkscape:cy="-42.003108"
      inkscape:document-units="px"
-     inkscape:current-layer="g3792"
+     inkscape:current-layer="svg2"
      showgrid="false"
      inkscape:window-width="1548"
      inkscape:window-height="1070"
@@ -55,12 +55,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-872.36218)">
+     transform="translate(0,-872.36218)"
+     inkscape:export-xdpi="95.940002"
+     inkscape:export-ydpi="95.940002">
     <g
        id="g3792"
        transform="translate(16.45315,16.45328)">
       <path
-         d="M163.54685,888.81545 l-147.093698,147.09345 l147.093698,0 l0,-147.09345  z "
+         d="M 163.54685,888.81545 16.453152,1035.9089 H 163.54685 Z"
          id="rect2985"
          style="fill:#44aa00;fill-opacity:1;stroke:none"
          inkscape:connector-curvature="0" />
