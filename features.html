@@ -65,7 +65,7 @@ double square(double x) {
 }
 
 void test_cute_data_driven_equality_demo() {
-  for (auto const & testEntry) {
+  for (auto const & testEntry : dataTable) {
     ASSERT_EQUAL_DDT(testEntry.expected, square(testEntry.input), testEntry.failure);
   }
 }{% endhighlight %}
