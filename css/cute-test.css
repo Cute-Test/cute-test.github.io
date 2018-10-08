@@ -150,10 +150,18 @@ h6,
  padding-top: 75px;
 }
 
-.sticky {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 20px;
+@media only screen and (max-width: 991px) {
+  .sticky {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
+  }
 }
 
 #footer {
