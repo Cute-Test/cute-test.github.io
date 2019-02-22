@@ -1,0 +1,23 @@
+---
+layout: post
+active: news
+title:  "CUTE 5.6.1 Release"
+---
+
+Today, we released CUTE 5.6.1. This release updates the underlying Eclipse Platform to 2018-12 
+and the underlying CDT version to 9.6.1. Additionally, the following bugs have been fixed:
+
+* Several quick-fixes have been missing in the last release
+* Sometimes the "Test Results" view didn't show any output
+* There was a timing issue in the "Test Results" view
+* GCOV integration was broken
+* Some of the Mockator examples were broken
+
+<br/>
+
+As always, you can download CUTE from the Eclipse Marketplace (go to the [Installation page](/installation) for instructions).
+If you have any issues or other feedback, please [let us know](/contact).
+
+<p class="pull-right">
+  <em>&mdash; Toni Suter</em>
+</p>
