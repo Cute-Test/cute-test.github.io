@@ -27,12 +27,12 @@ guides:
       - subtitle: "Using the CUTE Eclipse Plug-in"
         url: /guides/cute-eclipse-plugin-guide/#usingtheeclipseplugin
         subsubcategories:
-            - subsubtitle: "Functionality"
-              url: /guides/cute-eclipse-plugin-guide/#functionality
-            - subsubtitle: "Rerun Individual Tests, Suites or Groups of Tests"
-              url: /guides/cute-eclipse-plugin-guide/#rerunindividualtestssuitesorgroupsoftests
-            - subsubtitle: "XML Output"
-              url: /guides/cute-eclipse-plugin-guide/#xmloutput
+          - subsubtitle: "Functionality"
+            url: /guides/cute-eclipse-plugin-guide/#functionality
+          - subsubtitle: "Rerun Individual Tests, Suites or Groups of Tests"
+            url: /guides/cute-eclipse-plugin-guide/#rerunindividualtestssuitesorgroupsoftests
+          - subsubtitle: "XML Output"
+            url: /guides/cute-eclipse-plugin-guide/#xmloutput
       - subtitle: "Specify Boost's Headers Installation Location"
         url: /guides/cute-eclipse-plugin-guide/#specifyboost
       - subtitle: "TDD Support"
@@ -100,3 +100,12 @@ guides:
             url: /guides/mocking-with-cute/#mockfunctions
           - subsubtitle: "Using Regular Expressions For Expectations"
             url: /guides/mocking-with-cute/#usingregularexpressionsforexpectations
+  - title: "SCons Build Support"
+    url: /guides/scons/
+    subcategories:
+      - subtitle: "Introduction"
+        url: /guides/scons
+      - subtitle: "Installation"
+        url: /guides/scons/installation
+      - subtitle: "Getting Started"
+        url: /guides/scons/getting-started
