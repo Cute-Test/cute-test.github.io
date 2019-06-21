@@ -4,7 +4,7 @@ title: CUTE Guide
 active: guides
 permalink: /guides/
 ---
-  
+
 <div class="jumbotron">
   <div class="container">
     <h1>Guides <small>&ndash; need help? here you find your answers</small></h1>
@@ -17,10 +17,12 @@ permalink: /guides/
       <div class="tutorial-nav">
         <h2 class="post-title" itemprop="name headline">Overview</h2>
         <ul>
-          {% for item in site.data.navigation.guides %}
-          {% if item.subcategories != null %}
+          {% for item in site.data.navigation.guides %} {% if item.subcategories
+          != null %}
           <li>
-            <a href="{{ item.url }}"><big>{{ item.title }}</big></a>
+            <a href="{{ item.url }}"
+              ><big>{{ item.title }}</big></a
+            >
             <ul>
               {% for subcategory in item.subcategories %}
               <li>
@@ -31,19 +33,23 @@ permalink: /guides/
           </li>
           {% else %}
           <li>
-            <a href="{{ item.url }}"><big>{{ item.title }}</big></a>
+            <a href="{{ item.url }}"
+              ><big>{{ item.title }}</big></a
+            >
           </li>
           {% endif %}
-          <br>
+          <br />
           {% endfor %}
         </ul>
       </div>
     </div>
     <div class="col-lg-9">
-      {% assign guides = site.guides  | sort: 'tutorial_index' %}
-      {% for post in guides %}
+      {% assign guides = site.guides | sort: 'tutorial_index' %} {% for post in
+      guides %}
       <div class="post">
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <h1>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h1>
         <p>{{ post.content }}</p>
       </div>
       {% endfor %}

@@ -106,6 +106,6 @@ guides:
       - subtitle: "Introduction"
         url: /guides/scons
       - subtitle: "Installation"
-        url: /guides/scons/installation
+        url: /guides/scons#installation
       - subtitle: "Getting Started"
-        url: /guides/scons/getting-started
+        url: /guides/scons#getting-started
