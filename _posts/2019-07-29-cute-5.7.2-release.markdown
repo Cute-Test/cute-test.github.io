@@ -1,0 +1,22 @@
+---
+layout: post
+active: news
+title: "CUTE 5.7.2 Release"
+---
+
+Today, we released CUTE 5.7.2. This release updates the underlying Eclipse Platform to 2019-06 
+and the underlying CDT version to 9.8.1. The CUTE C++ headers have also been updated to the latest
+2.2.3 version.
+
+* Update the Eclipse platform to 2019-06 and CDT to 9.8.1
+* Update the CUTE C++ headers to 2.2.3
+* Some small bugfixes for the Cute and Mockator plug-in
+
+<br/>
+
+As always, you can download CUTE from the Eclipse Marketplace (go to the [Installation page](/installation) for instructions).
+If you have any issues or other feedback, please [let us know](/contact).
+
+<p class="pull-right">
+  <em>&mdash; Hansruedi Patzen</em>
+</p>
