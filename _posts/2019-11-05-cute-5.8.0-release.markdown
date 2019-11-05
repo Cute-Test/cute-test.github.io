@@ -1,0 +1,21 @@
+---
+layout: post
+active: news
+title: "CUTE 5.8.0 Release"
+---
+
+We have released CUTE 5.8.0. This release updates the underlying Eclipse Platform to 2019-09
+and the underlying CDT version to 9.9.0. The CUTE C++ headers have also been updated to the latest
+2.2.5 version.
+
+* Update the Eclipse platform to 2019-09 and CDT to 9.9.0
+* Update the CUTE C++ headers to 2.2.5
+
+<br/>
+
+As always, you can download CUTE from the Eclipse Marketplace (go to the [Installation page](/installation) for instructions).
+If you have any issues or other feedback, please [let us know](/contact).
+
+<p class="pull-right">
+  <em>&mdash; Thomas Corbat</em>
+</p>
